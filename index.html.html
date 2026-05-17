@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Swati 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#fbc2eb,#a18cd1);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
+position:relative;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.stars{
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+.stars span{
+position:absolute;
+display:block;
+font-size:22px;
+animation:float 10s linear infinite;
+opacity:0.8;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh) rotate(0deg);
+opacity:0;
+}
+10%{opacity:1;}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
+
+.card{
+width:90%;
+max-width:760px;
+padding:40px;
+border-radius:35px;
+background:rgba(255,255,255,0.18);
+backdrop-filter:blur(15px);
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+text-align:center;
+position:relative;
+z-index:5;
+border:2px solid rgba(255,255,255,0.3);
+animation:cardOpen 1.5s ease;
+}
+
+@keyframes cardOpen{
+from{
+transform:scale(0.7);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+.top-heart{
+font-size:65px;
+animation:heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+0%{transform:scale(1);}
+25%{transform:scale(1.15);}
+50%{transform:scale(1);}
+75%{transform:scale(1.15);}
+100%{transform:scale(1);}
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:white;
+margin-top:10px;
+text-shadow:0 0 15px rgba(255,255,255,0.5);
+}
+
+.name{
+font-size:38px;
+font-weight:700;
+margin-top:10px;
+color:#ff1744;
+text-shadow:0 0 10px rgba(255,255,255,0.4);
+}
+
+.subtitle{
+margin-top:8px;
+font-size:20px;
+color:white;
+font-weight:500;
+}
+
+.letter{
+margin-top:28px;
+background:rgba(255,255,255,0.35);
+padding:30px;
+border-radius:25px;
+font-size:18px;
+line-height:1.9;
+color:#4a2c2a;
+font-weight:500;
+box-shadow:inset 0 0 12px rgba(255,255,255,0.4);
+}
+
+.highlight{
+color:#ff1744;
+font-weight:700;
+}
+
+.btn{
+margin-top:30px;
+padding:16px 42px;
+font-size:20px;
+font-weight:600;
+background:linear-gradient(45deg,#ff416c,#ff4b2b);
+color:white;
+border:none;
+border-radius:50px;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(255,75,43,0.4);
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 12px 35px rgba(255,75,43,0.7);
+}
+
+.hidden-message{
+display:none;
+margin-top:25px;
+font-size:28px;
+font-weight:700;
+color:white;
+animation:fadeIn 1.2s ease;
+text-shadow:0 0 12px rgba(255,255,255,0.7);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.footer{
+margin-top:28px;
+font-size:20px;
+font-weight:600;
+color:white;
+}
+
+.music-note{
+position:absolute;
+top:20px;
+right:20px;
+font-size:30px;
+color:white;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+@media(max-width:600px){
+.card{
+padding:25px;
+}
+
+h1{
+font-size:50px;
+}
+
+.name{
+font-size:30px;
+}
+
+.letter{
+font-size:16px;
+}
+
+.hidden-message{
+font-size:22px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="stars">
+<span style="left:5%;animation-duration:8s;">💖</span>
+<span style="left:15%;animation-duration:12s;">🥺</span>
+<span style="left:25%;animation-duration:10s;">🌸</span>
+<span style="left:35%;animation-duration:14s;">💌</span>
+<span style="left:45%;animation-duration:9s;">✨</span>
+<span style="left:55%;animation-duration:13s;">❤️</span>
+<span style="left:65%;animation-duration:11s;">😔</span>
+<span style="left:75%;animation-duration:15s;">💕</span>
+<span style="left:85%;animation-duration:9s;">🌹</span>
+<span style="left:95%;animation-duration:12s;">💞</span>
+</div>
+
+<div class="card">
+
+<div class="music-note">🎵</div>
+
+<!-- 🎵 Romantic Background Music Start -->
+<audio id="bgMusic" autoplay loop>
+<source src="Sorry Song.mp3" type="audio/mp3">
+</audio>
+<!-- 🎵 Romantic Background Music End -->
+
+<div class="top-heart">🥺💔</div>
+
+<h1>I'm Sorry</h1>
+
+<div class="name">Swati 💖</div>
+<div class="subtitle">You Truly Mean Everything To Me ✨</div>
+
+<div class="letter">
+I know I made mistakes and hurt your feelings... and for that, I am truly sorry. 😔
+<br><br>
+You are one of the most precious people in my life, and seeing you upset hurts me deeply. 💔
+<br><br>
+I never wanted distance, sadness, or pain between us. I only want your smile, your happiness, and the beautiful bond we share. 🌸
+<br><br>
+Please forgive me for my words and actions. I promise from my heart that I will learn from my mistakes and become better for you. 🥺✨
+<br><br>
+<span class="highlight">Your smile is my favorite thing in this world ❤️</span>
+<br><br>
+No matter what happens, you will always be special to me. I just want one chance to make things right again. 💌
+</div>
+
+<button class="btn" onclick="showLove()">Click Here For A Surprise 💕</button>
+
+<div class="hidden-message" id="loveMessage">
+🥺 Swati, Please Forgive Me 💖<br><br>
+✨ You Are My Happiness ✨
+</div>
+
+<div class="footer">
+Made With True Feelings ❤️
+</div>
+
+</div>
+
+<script>
+// 🎵 Play Music When User Clicks Anywhere
+window.addEventListener('click', () => {
+const music = document.getElementById('bgMusic');
+music.play();
+}, { once:true });
+
+function showLove(){
+const msg=document.getElementById('loveMessage');
+msg.style.display='block';
+}
+</script>
+
+</body>
+</html>
